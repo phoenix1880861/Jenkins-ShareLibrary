@@ -1,3 +1,3 @@
-def word(){
+def call(){
     println("new!")
   }
