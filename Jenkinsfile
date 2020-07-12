@@ -2,7 +2,7 @@
 
 @Library('Jenkins-ShareLibrary') _
 
-def tools = new org.devops.tools()
+def tools = new src.org.devops.tools()
 
 hello()
 loge()
@@ -44,7 +44,7 @@ pipeline {
                         timeout(time: 20, unit: "MINUTES"){
                             script{   
                                 println("应用打包")
-                                tools.PrintMes("应用打包",'red')
+                                tools.PrintMes("应用打包",'blue')
                             }
                         }
                     }
@@ -56,7 +56,7 @@ pipeline {
                         timeout(time: 30, unit: "MINUTES"){
                             script{   
                                 println("代码扫描")
-                                tools.PrintMes("代码扫描",'red')
+                                tools.PrintMes("代码扫描",'green')
                             }
                         }
                     }
