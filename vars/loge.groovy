@@ -1,3 +1,3 @@
-def call(){
+def ckll(){
     println("new!")
   }
