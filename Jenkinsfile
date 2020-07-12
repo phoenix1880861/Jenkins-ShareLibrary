@@ -2,7 +2,7 @@
 
 @Library('Jenkins-ShareLibrary') _
 
-def tools = new src.org.devops.tools()
+def tools = new org.devops.tools()
 
 hello()
 loge()
