@@ -2,7 +2,7 @@
 
 @Library('Jenkins-ShareLibrary') _
 
-def tools = new org.devops.tools
+def tools = new org.devops.tools()
 
 String workspace = "/var/lib/jenkins/workspace"
 
@@ -13,9 +13,7 @@ pipeline {
             } 
     }
     
-    tools {
-        maven 'maven-3.6.3' 
-    }
+    //tools { maven 'maven-3.6.3' }
     
     options {
         timestamps()   //记录日志时间
