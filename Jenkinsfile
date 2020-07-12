@@ -5,6 +5,7 @@
 def tools = new org.devops.tools()
 
 hello()
+new()
 
 String workspace = "/var/lib/jenkins/workspace"
 
